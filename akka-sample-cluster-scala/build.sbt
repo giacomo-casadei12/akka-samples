@@ -19,7 +19,9 @@ lazy val `akka-sample-cluster-scala` = project
       "ch.qos.logback"    %  "logback-classic"             % "1.2.9",
       "com.typesafe.akka" %% "akka-multi-node-testkit"    % akkaVersion % Test,
       "org.scalatest"     %% "scalatest"                  % "3.0.8"     % Test,
-      "com.typesafe.akka" %% "akka-actor-testkit-typed"   % akkaVersion % Test),
+      "com.typesafe.akka" %% "akka-actor-testkit-typed"   % akkaVersion % Test,
+      "com.typesafe.akka" %% "akka-cluster-tools" % akkaVersion,
+      "com.typesafe.akka" %% "akka-remote" % "2.6.19"),
     run / fork := false,
     Global / cancelable := false,
     // disable parallel tests

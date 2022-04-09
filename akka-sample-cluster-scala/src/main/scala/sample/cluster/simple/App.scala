@@ -5,6 +5,12 @@ import akka.actor.typed.ActorSystem
 import akka.actor.typed.Behavior
 import com.typesafe.config.ConfigFactory
 
+
+//Avvia App 25251 e poi App 0
+//Console: UN ALTRO = è stato registrato un nuovo nodo nel receptionist
+//         PROVA DA (indirizzo) = messaggio ricevuto da un attore appena io (nodo) mi collego al cluster (fatto per tutti gli attori registrati nel receptionist)
+//                  se 127.0.0.1:porta senza path aggiuntivo allora è il nodo stesso che si è inviato un messaggio
+
 object App {
 
   object RootBehavior {
